@@ -1,0 +1,136 @@
+.work {
+    .descr {
+        margin-top: 32px;
+    }
+}
+.work_item {
+    margin-top: 56px;
+    display: flex;
+    justify-content: space-between;
+}
+.work_info {
+    box-sizing: border-box;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.12);
+    border-radius: 10px;
+}
+.work_descr {
+    max-width: 291px;
+    margin-left: 32px;
+    margin: 32px;
+    .descr {
+        margin-top: 24px;
+    }
+}
+.price {
+    max-width: 90px;
+    margin: 32px 0;
+    border-bottom: 3px solid $yellow;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 135%;
+}
+.work_img-1 {
+    background-image: url(../img/job1.png);
+    width: 393px;
+    height: 247px;
+}
+.work_img-2 {
+    background-image: url(../img/job2.png);
+    width: 393px;
+    height: 247px;
+}
+.work_img-3 {
+    background-image: url(../img/job3.png);
+    width: 393px;
+    height: 247px;
+}
+.work-nav {
+    display: none;
+}
+@media screen and (max-width: 770px) {
+    .tab {
+        overflow: hidden;
+        border: 1px solid #ccc;
+        background-color: #f1f1f1;
+    }
+    .tab button {
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+    }
+    .tab button:hover {
+        background-color: #ddd;
+    }
+    
+    /* Create an active/current tablink class */
+    .tab button.active {
+        background-color: #ccc;
+    }
+    
+    .work_item {
+        display: flex;
+        flex-direction: column;
+    }
+    .work_img-1 {
+        background-image: url(../img/job1-tablet.png);
+        width: 690px;
+        height: 247px;
+    }
+    .work_img-2 {
+        background-image: url(../img/job2-tablet.png);
+        width: 690px;
+        height: 247px;
+    }
+    .work_img-3 {
+        background-image: url(../img/job3-tablet.png);
+        width: 690px;
+        height: 247px;
+        background-repeat:no-repeat;
+        background-size:cover;
+    }
+    .work_descr {
+        max-width: 550px;
+    }
+    .work_info {
+        display: none;
+        margin-bottom: 32px;
+        padding: 6px 12px;
+        border: 1px solid #ccc;
+        border-top: none;
+        
+    }
+    .work-nav {
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+        input[type="radio"] {
+            opacity: 1;
+            width: 20px;
+            height: 20px;
+            border: 1px solid #000;
+            border-radius: 20%;
+        }
+    }
+    /* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
+    .work_nav>#radio-1:click~.work_item>#content-1, .work_nav>#radio-1:checked~.work_item>#content-2 {
+    display: block;
+    }
+    .work_nav>input[type="radio"]:click {
+        background-color: #000;
+        border-bottom: 1px solid #000;
+    }
+    .work_item:c {
+        display: flex;
+    }
+    .work-tab {
+        display: block;
+        width: 20px;
+        height: 20px;
+    }
+    
+}

@@ -1,0 +1,94 @@
+.form {
+    margin-top: 100px;
+    .container {
+        padding: 0;
+        background-image: url(/img/city.png);
+    }
+    h2 {
+        color: white;
+    }
+    textarea {
+        width: 579px;
+        display: block;
+        font-size: 16px;
+        color: white;
+        overflow: hidden;
+        line-height: 44px;
+        background-image: linear-gradient(to bottom,transparent,transparent 43px,rgba(255,255,255,.2) 0);
+        background-size: 100% 44px;
+        background-size: 4;
+        background-repeat: repeat-y;
+        background-color: transparent;
+        border: none;
+        resize: none;
+        margin-bottom: 56px;
+        &::placeholder {
+            color: white;
+        }
+    }
+    i {
+        color: white;
+        vertical-align: bottom;
+    }
+    button {
+        background: #FFFFFF;
+        border-radius: 4px;
+        display: block;
+        width: 206px;
+        height: 50px;
+        font-family: Exo 2;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 150%;
+        align-items: center;
+        text-align: center;
+        color: #0B7572;
+    }
+}
+
+.form_info {
+    background-color: $green;
+    max-width: 700px;
+    padding: 56px;
+    color: white;
+    form {
+        padding-top: 55px;
+        font-family: PT Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 125%;
+        color: #FFFFFF;
+    }
+    input[type="file"], input[type="image"] {
+        outline: 0;
+        opacity: 0;
+        pointer-events: none;
+        user-select: none;
+    }
+    .title {
+        color: white;
+        font-family: PT Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 125%;
+        color: #FFFFFF;
+        padding-left: 6px;
+    }
+}
+.form_group_file {
+    border-bottom: 1px solid rgba(255,255,255,.2);
+    width: 579px;
+    margin-bottom: 30px;
+    i {
+        transform: rotate(45deg);
+    } 
+}
+.form_group_img {
+    border-bottom: 1px solid rgba(255,255,255,.2);
+    width: 579px;
+    margin-bottom: 56px;
+}
+

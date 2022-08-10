@@ -1,0 +1,35 @@
+.Your_data {
+    button {
+        background: #0B7572;
+        border-radius: 4px;
+        font-family: 'Exo 2';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 150%;
+        border: none;
+        width: 248px;
+        height: 50px;
+        align-items: center;
+        text-align: center;
+        color: #FFFFFF;
+    }
+}
+.data_info {
+    padding: 56px;
+    margin-top: 48px;
+    background: #F9F9FB;
+
+}
+.data_descr {
+    margin-bottom: 40px;
+}
+.tech_info {
+    margin-bottom: 40px;
+}
+.info_img {
+    margin-bottom: 80px;
+    img {
+        margin-right: 16px;
+    }
+}

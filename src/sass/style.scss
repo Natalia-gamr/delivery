@@ -1,0 +1,59 @@
+@import 'libs/bootstrap-reboot.min';
+@import 'base/variables';
+@import 'blocks/header';
+@import 'blocks/votes';
+@import 'blocks/why';
+@import 'blocks/work';
+@import 'blocks/clients';
+@import 'blocks/stage';
+@import 'blocks/company';
+@import 'blocks/employee';
+@import 'blocks/contact';
+@import 'blocks/form';
+@import 'blocks/yourData';
+@import 'blocks/video';
+
+* {
+    font-family: 'Exo 2', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #363738;
+}
+.descr {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    color: $grey;
+    &_14 {
+        font-size: 14px;
+        color: #6B6B6C;
+    }
+}
+h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 125%;
+}
+h2 {
+    font-size: 48px;
+}
+h3 {
+    font-size: 20px;
+}
+a {
+    font-family: 'PT Sans', sans-serif;
+        color: #000;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 150%;
+}
+@media screen and (max-width: 770px) {
+    h1 {
+        font-size: 44px;
+    }   
+    h2 {
+        font-size: 39px;
+    }  
+}

@@ -1,0 +1,23 @@
+.video {        
+    position: relative;
+    .descr {
+        max-width: 848px;
+        margin-top: 32px;
+        
+    }
+    img {
+            margin-top: 40px;
+    
+        }
+    i {
+        color: $green;
+        position: absolute;
+        padding: 17px;
+        background-color:rgba($color: white, $alpha: 0.2);
+        border: none;
+        border-radius: 50%;
+        font-size: 47px;
+        top: 60%;
+        left: 50%;
+    }
+}

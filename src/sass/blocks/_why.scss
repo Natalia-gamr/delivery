@@ -1,0 +1,85 @@
+.why {
+    h2 {
+        padding-top: 160px;
+        position: absolute;
+        z-index: 10;
+        color: white;
+        max-width: 362px;
+        margin-left: 100px;
+    }
+}
+#trapezium {
+    
+    position: absolute;
+    width: 120px;
+    border-top: 0px solid transparent;
+    border-bottom: 453px solid #0B7572;
+    border-left: 440px solid #0B7572;
+    border-right: 328px solid transparent;
+}
+#parallelogram {
+    width: 188px;
+    height: 453px;
+    left: 603px;
+    background: #0B7572;
+    opacity: .3;
+    transform: skew(36deg);
+    position: absolute;
+}
+.image {
+    position: relative;
+    max-height: 453px;
+    // :nth-child(2) {
+    //     position: relative;
+    //     right: 352px;
+    // }
+    img {
+        position: relative;
+        left: 301px;
+        z-index: -10;
+        // bottom: 453px;
+    }
+}
+.why_info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 10px 100px;
+}
+.why_item {
+    display: flex;
+    margin-top: 62px;
+}
+.info_descr {
+    flex-basis: 291px;
+    margin-left: 40px;
+}
+@media screen and (max-width:770px) {
+    .why {
+        h2{
+            margin-left: 40px;
+        }
+    }
+    .image{
+        img{
+            left: 113px;
+            height: 383px;
+        }
+    }
+    #trapezium{
+        border-bottom: 383px solid #0b7572;
+        border-left: 233px solid #0b7572;
+        border-right: 287px solid transparent;
+    }
+    #parallelogram{
+        height: 383px;
+        left: 372px;
+    }
+    .why_info {
+        justify-content: flex-start;
+        margin: 10px 39px;
+    }
+    .info_descr {
+        flex-basis: 394px;
+    }
+}
